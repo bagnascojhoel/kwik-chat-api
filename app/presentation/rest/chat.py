@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify as toJson, request
-from application import chat_service
+from app.application import chat_service
 from uuid import uuid4
 
 chat_blueprint = Blueprint('chat', __name__)

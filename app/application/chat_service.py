@@ -1,4 +1,4 @@
-from domain import chat_repository
+from app.domain import chat_repository
 
 def send_user_message(chat_id, message):
   chat_repository.add_message(chat_id, message)
