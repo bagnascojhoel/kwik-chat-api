@@ -6,6 +6,10 @@ info:
 servers:
   - url: http://localhost:5000
     description: Local
+  - url: https://kwik-chat-api.fly.dev/
+    description: Production
+# TODO: Move this to an environment variable with jinja2 templates
+
 
 tags:
   - name: Chat

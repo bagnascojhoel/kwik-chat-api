@@ -1,3 +1,4 @@
+from flask_cors import CORS
 from flask import render_template, Blueprint, abort, send_file
 from jinja2 import TemplateNotFound
 
@@ -11,6 +12,7 @@ swagger_ui_blueprint = Blueprint(
         static_folder='swagger-ui',
         template_folder='swagger-ui',
           url_prefix='')
+CORS(swagger_ui_blueprint)
 
 
 @swagger_ui_blueprint.route('/api-docs')

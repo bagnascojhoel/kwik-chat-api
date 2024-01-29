@@ -1,8 +1,10 @@
 from flask import Blueprint, jsonify as toJson, request
+from flask_cors import CORS
 from app.application import chat_service
 from uuid import uuid4
 
 chat_blueprint = Blueprint('chat', __name__)
+CORS(chat_blueprint)
 
 # TODO: How to add global error handling? What about l10n?
 
